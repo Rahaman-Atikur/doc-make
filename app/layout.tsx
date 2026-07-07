@@ -23,7 +23,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  getDocuments();
+  const allDocuments = getDocuments();
+  console.log(allDocuments);
   return (
     <html
       lang="en"
