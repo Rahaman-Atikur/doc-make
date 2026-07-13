@@ -14,7 +14,7 @@ type SidebarProps = {
 
 const Sidebar = ({ docs }: SidebarProps) => {
   const root = docs.filter((doc) => !doc.parent);
-  console.log("roots", root);
+  console.log({root});     
   return <div>Sidebar</div>;
 };
 
