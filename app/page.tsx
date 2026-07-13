@@ -1,9 +1,11 @@
-import Header from "@/components/Header";
-// import Image from "next/image";
+import React from 'react';
 
-export default function Home() {
-  return (
-    <Header></Header>
-    
-  );
-}
+const page = () => {
+    return (
+        <div>
+            Landing page
+        </div>
+    );
+};
+
+export default page;
