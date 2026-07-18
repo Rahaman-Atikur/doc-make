@@ -1,15 +1,13 @@
+import React from 'react';
 type PageProps = {
-  params: Promise<{
+  params: {
     contentId: string;
-  }>;
+  };
 };
-
-const Page = async ({ params }: PageProps) => {
-  const { contentId } = await params;
-
+const Page = ({params}:PageProps) => {
   return (
     <div>
-      {contentId}
+      {`This is the page for contentId: ${params.contentId}`}
     </div>
   );
 };
